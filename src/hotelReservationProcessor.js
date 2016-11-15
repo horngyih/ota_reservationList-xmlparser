@@ -84,7 +84,7 @@ module.exports = {
                     var comments = roomStay.Comments;
                     if (comments) {
                         if (Array.isArray(comments) === true) {
-                            //                        console.log( comments );
+                            console.log( comments );
                             for (var i = 0; i < comments.length; i++) {
                                 comment = comments[i];
                                 result = self.parseCommentsCRSID(comment);
@@ -94,9 +94,9 @@ module.exports = {
                             result = self.parseCommentsCRSID(comment);
                         }
                     }
-
-                    if (result === null) {
-                        //                    console.log( comments );
+                    
+                    if( result === null ){
+//                        console.log( comments );
                     }
                 }
             }
